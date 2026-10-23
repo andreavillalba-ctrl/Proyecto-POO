@@ -4,10 +4,17 @@
  */
 package calculator;
 
-/**
- *
- * @author Admin_
- */
+    //atributos
+    private String resultado;
+    
+    //Metodos para acceder al acumulador 
+    public void setResultado(String valor){
+        this.resultado = valor;
+    }// fin set resultado
+    
+    public String getResultado(){
+        return this.resultado;
+        
 public class Calculadora {
     
 }
