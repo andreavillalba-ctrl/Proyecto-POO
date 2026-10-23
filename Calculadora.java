@@ -1,20 +1,49 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package calculator;
 
+/**
+ *
+ * @author 225994426
+ */
+public abstract class Calculadora {
+
     //atributos
-    private String resultado;
-    
-    //Metodos para acceder al acumulador 
-    public void setResultado(String valor){
-        this.resultado = valor;
-    }// fin set resultado
-    
-    public String getResultado(){
+    private String resultado = "0";
+    private String error = "";
+
+    //metodos para acceder al acumulador
+    /**
+     * Asigna el valor del acumulador.
+     *
+     * @param resultado
+     */
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
+    }//fin setResultado
+
+    /**
+     * Devuelve el valor del acumulador.
+     *
+     * @return
+     */
+    public String getResultado() {
         return this.resultado;
-        
-public class Calculadora {
-    
+    }//fin getResultado
+
+    /**
+     * Devuelve el mensaje de error actual.
+     *
+     * @return
+     */
+    public String getError() {
+        return this.error;
+    }//fin getError
+
+    /**
+     * Asigna el mensaje de error.
+     *
+     * @param error
+     */
+    protected void setError(String error) {
+        this.error = error;
+    }//fin setError
 }
